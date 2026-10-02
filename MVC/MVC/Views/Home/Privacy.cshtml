@@ -1,0 +1,25 @@
+﻿@model List<MVC.Models.StudentModel>;
+
+<div class="text-center">
+    <h1 class="display-4">Welcome Student</h1>
+
+    @{
+        foreach(MVC.Models.StudentModel student in Model)
+        {
+            <span>
+                <h3>ID:</h3>
+                <label>@student.ID</label>
+            </span>
+            <span>
+                <h3>Full Name:</h3>
+                <label>@student.FullName</label>
+            </span>
+            <span>
+                <h3>Address:</h3>
+                <label>@student.LastName</label>
+            </span>
+        }
+    }
+
+    
+</div>
